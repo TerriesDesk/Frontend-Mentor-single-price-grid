@@ -19,11 +19,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -72,10 +72,11 @@ h1 {
   color: white;
   display: inline-block;
   font-size: 1.5rem;
+  margin-top: 10px;
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-  width: 250px;
+  width: 80%;
 }
 
 .btn:hover {
@@ -113,4 +114,19 @@ h1 {
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+/******** MEDIA QUERIES *********/
+/*******************************/
+
+@media only screen and (min-width: 600px) {
+  .container-fluid {
+    display:flex;
+    flex-flow: row nowrap;
+  }
+
+  #pricing, #features {
+    width: 50%;
+    padding: 3rem;
+  }
 }
